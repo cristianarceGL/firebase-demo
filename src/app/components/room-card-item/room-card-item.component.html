@@ -1,0 +1,6 @@
+<mat-card [ngClass]="{'seventh-floor': room.category=='floor-7', 'tenth-floor':room.category=='floor-10' }">
+  <mat-card-title>Floor: {{ room.category }}th</mat-card-title>
+  <mat-card-content>
+    <p>{{ room.description }}</p>
+  </mat-card-content>
+</mat-card>

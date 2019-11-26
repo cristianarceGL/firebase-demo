@@ -1,0 +1,49 @@
+{
+  "rooms":{
+     "Xve1TI3HEsrIZgk7LtSw":{
+        "id":"Xve1TI3HEsrIZgk7LtSw",
+        "description":"Gorilla Logic SBC-10-C++",
+        "category":"floor-10"
+     },
+     "Nmd9ZSYWM3hNSbq8XMlc":{
+        "id":"Nmd9ZSYWM3hNSbq8XMlc",
+        "description":"Gorilla Logic SBC-10-Decorator",
+        "category":"floor-10"
+     },
+     "RRvUZijKWxBAN2j8Svyy":{
+        "id":"RRvUZijKWxBAN2j8Svyy",
+        "description":"Gorilla Logic SBC-10-Factory",
+        "category":"floor-10"
+     },
+     "pbunlFtuIOGPRVwgVGiq":{
+        "id":"pbunlFtuIOGPRVwgVGiq",
+        "description":"Gorilla Logic SBC-10-JavaScript",
+        "category":"floor-10"
+     },
+     "lU7hjHaeD68q2ojpw2vs":{
+        "id":"lU7hjHaeD68q2ojpw2vs",
+        "description":"Gorilla Logic SBC-10-Prototype",
+        "category":"floor-10"
+     },
+     "0264ykr4PA0mKr9fSPVl":{
+        "id":"0264ykr4PA0mKr9fSPVl",
+        "description":"Gorilla Logic SBC-10-Ruby",
+        "category":"floor-10"
+     },
+     "DQgFEVmCwDF45VPlsQAA":{
+        "id":"DQgFEVmCwDF45VPlsQAA",
+        "description":"Gorilla Logic SBC-10-Singleton",
+        "category":"floor-10"
+     },
+     "yhX5XRIocPpHm0PDXp95":{
+        "id":"yhX5XRIocPpHm0PDXp95",
+        "description":"Gorilla Logic SBC-7-C#",
+        "category":"floor-7"
+     },
+     "CA4yyxaEqIyjRjlvm7Ps":{
+        "id":"CA4yyxaEqIyjRjlvm7Ps",
+        "description":"Gorilla Logic SBC-7-Java",
+        "category":"floor-7"
+     }
+  }
+}

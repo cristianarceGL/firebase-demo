@@ -1,0 +1,31 @@
+<div class="buttons">
+  <button
+    mat-raised-button
+    (click)="loadAllRequested.emit()"
+    style="margin-right:10px;"
+  >
+    Load All Rooms</button
+  >
+  <button mat-raised-button (click)="loadCategoryRequested.emit('floor-7')"
+  style="margin-right:10px;">
+    Load Rooms 7th
+  </button>
+  <button mat-raised-button (click)="loadCategoryRequested.emit('floor-10')">
+    Load Rooms 10th
+  </button>
+</div>
+<div *ngIf="loading">
+  <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+</div>
+<div *ngIf="!loading">
+  <div class="rooms-list" *ngIf="rooms">
+    <app-room-card-item
+      *ngFor="let room of rooms"
+      [room]="room"
+    ></app-room-card-item>
+  </div>
+
+  <div *ngIf="!rooms">No rooms found</div>
+</div>
+<br />
+<div class="error" *ngIf="error">ERROR: {{ error }}</div>

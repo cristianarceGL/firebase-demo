@@ -1,0 +1,10 @@
+<h1>Gorilla Logic rooms location</h1>
+
+<app-room-card-list
+  *ngIf="appComponentViewModel$ | async as vm"
+  [rooms]="vm.rooms"
+  [loading]="vm.loading"
+  [error]="vm.error"
+  (loadAllRequested)="onLoadAllRequested()"
+  (loadCategoryRequested)="onLoadCategoryRequested($event)"
+></app-room-card-list>

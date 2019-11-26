@@ -1,30 +1,23 @@
-import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { MatButtonModule } from '@angular/material/button';
-import { MatCardModule } from '@angular/material/card';
-import { MatIconModule } from '@angular/material/icon';
-import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 import { BrowserModule } from '@angular/platform-browser';
 import { EffectsModule } from '@ngrx/effects';
 import { StoreModule } from '@ngrx/store';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { AppComponent } from './app.component';
-import { RoomCardItemComponent } from './components/room-card-item/room-card-item.component';
-import { RoomCardListComponent } from './components/room-card-list/room-card-list.component';
-import { RoomStateModule } from './state/room';
+import { RoomStateModule } from './../app/features/rooms-location/state/room';
 import { FirebaseModule } from './features/core/firebase.module';
+import { SharedModule } from './shared/shared.module';
+import { RoomsLocationModule } from './features/rooms-location/rooms-location.module';
 
 @NgModule({
   imports: [
     BrowserModule,
-    FormsModule,
-    HttpClientModule,
-    MatCardModule,
-    MatProgressBarModule,
-    MatButtonModule,
-    MatIconModule,
+    BrowserAnimationsModule,
+    SharedModule,
     FirebaseModule,
+    RoomsLocationModule,
     StoreModule.forRoot({}),
     EffectsModule.forRoot([]),
     StoreDevtoolsModule.instrument({
@@ -32,7 +25,7 @@ import { FirebaseModule } from './features/core/firebase.module';
     }),
     RoomStateModule
   ],
-  declarations: [AppComponent, RoomCardListComponent, RoomCardItemComponent],
+  declarations: [AppComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

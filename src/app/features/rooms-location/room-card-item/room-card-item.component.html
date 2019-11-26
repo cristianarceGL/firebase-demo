@@ -1,0 +1,14 @@
+<mat-card [ngClass]="{'seventh-floor': room.category=='floor-7', 'tenth-floor':room.category=='floor-10' }">
+    <mat-card-header>
+      <div mat-card-avatar style="margin: 0 2vw 2vh 0;" class="container" *ngIf="downloadURL | async; let url">
+          <img [src]="url" alt="Image from AngularFireStorage">
+      </div>
+      <mat-card-title>Floor: {{ room.category }}th</mat-card-title>
+      <mat-card-subtitle>{{ room.description }}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+    <div mat-card-image class="container" *ngIf="downloadURL | async; let url">
+        <img [src]="url" alt="Image from AngularFireStorage">
+    </div>
+    </mat-card-content>
+  </mat-card>

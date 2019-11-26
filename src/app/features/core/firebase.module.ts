@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { AngularFireModule } from '@angular/fire';
+import { AngularFireStorageModule, AngularFireStorage } from '@angular/fire/storage';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { AngularFireAuthGuard } from '@angular/fire/auth-guard';
 import { AngularFireDatabaseModule, AngularFireDatabase, AngularFireList } from '@angular/fire/database';
@@ -16,8 +17,11 @@ export { AngularFirestore };
 export { AngularFireDatabase };
 export { DocumentChangeAction };
 export { AngularFirestoreDocument };
+export { AngularFireStorage };
 
-const modules = [AngularFirestoreModule, AngularFireDatabaseModule, AngularFirestoreModule, AngularFireAuthModule];
+
+const modules = [AngularFirestoreModule, AngularFireDatabaseModule,
+  AngularFirestoreModule, AngularFireAuthModule, AngularFireStorageModule];
 
 @NgModule({
   imports: [...modules, AngularFireModule.initializeApp(environment.firebase)],

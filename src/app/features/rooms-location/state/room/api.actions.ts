@@ -1,5 +1,5 @@
 import { createAction, props } from '@ngrx/store';
-import { Room } from 'src/app/models';
+import { Room } from './../../models';
 
 export const loadAllSucceeded = createAction(
   '[Rooms API] Load All Succeeded',

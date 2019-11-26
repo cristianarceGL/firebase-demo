@@ -1,7 +1,8 @@
 import { Action, createReducer, on } from '@ngrx/store';
-import { Room } from '../../models';
 import * as RoomAPIActions from './api.actions';
 import * as RoomUIActions from './ui.actions';
+
+import { Room } from './../../models';
 
 export interface State {
   rooms: Room[];

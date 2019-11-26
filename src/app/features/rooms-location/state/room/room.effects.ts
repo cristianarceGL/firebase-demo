@@ -4,9 +4,9 @@ import { of } from 'rxjs';
 import { catchError, map, mergeMap, tap } from 'rxjs/operators';
 import * as RoomAPIActions from './api.actions';
 import * as RoomUIActions from './ui.actions';
-import { RoomService } from 'src/app/services/rooms.service';
 import { DocumentChangeAction } from '@angular/fire/firestore';
-import { Room } from 'src/app/models';
+import { Room } from './../../models';
+import { RoomService } from './../../rooms-location.service';
 
 export interface FirebaseResponse {
   key: string;

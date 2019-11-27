@@ -1,6 +1,8 @@
+import { Observable } from 'rxjs';
 import { Component, Input, OnInit } from '@angular/core';
-import { Room } from '../models';
-import { CloudStorageService } from './../../../features/core/cloud-storage.service';
+
+import { Room } from '~features/rooms-location/models';
+import { CloudStorageService } from '~features/core/cloud-storage.service';
 
 @Component({
   selector: 'app-room-card-item',
@@ -9,11 +11,11 @@ import { CloudStorageService } from './../../../features/core/cloud-storage.serv
 })
 export class RoomCardItemComponent implements OnInit {
   @Input() public room: Room;
-  public downloadURL: any;
+  public gorillaAvatar: Observable<any>;
 
   constructor(private cloudStorageService: CloudStorageService){}
 
   public ngOnInit() {
-    this.downloadURL = this.cloudStorageService.getStoragedImages();
+    this.gorillaAvatar = this.cloudStorageService.getStoragedImages();
   }
 }

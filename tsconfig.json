@@ -22,20 +22,20 @@
       "dom"
     ],
     "paths": {
-      "@enviroments/*": [
+      "~environments/*": [
         "src/environments/*"
       ],
-      "@app/*": [
+      "~app/*": [
         "src/app/*"
       ],
-      "@app/assets/*": [
+      "~assets/*": [
         "src/assets/*"
       ],
-      "@app/features/*": [
-        "src/features/*"
+      "~features/*": [
+        "src/app/features/*"
       ],
-      "@app/shared/*": [
-        "src/shared/*"
+      "~shared/*": [
+        "src/app/shared/*"
       ],
       "core-js/es7/reflect": ["node_modules/core-js/proposals/reflect-metadata"],
       "core-js/es6/*": ["node_modules/core-js/es"]

@@ -3,14 +3,15 @@ import { AngularFireModule } from '@angular/fire';
 import { AngularFireStorageModule, AngularFireStorage } from '@angular/fire/storage';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { AngularFireAuthGuard } from '@angular/fire/auth-guard';
-import { AngularFireDatabaseModule, AngularFireDatabase, AngularFireList } from '@angular/fire/database';
+import { AngularFireDatabaseModule, AngularFireDatabase } from '@angular/fire/database';
 import {
   AngularFirestore,
   AngularFirestoreDocument,
   AngularFirestoreModule,
   DocumentChangeAction,
 } from '@angular/fire/firestore';
-import { environment } from 'src/environments/environment';
+
+import { environment } from '~environments/environment';
 
 
 export { AngularFirestore };

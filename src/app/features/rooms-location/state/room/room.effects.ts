@@ -1,12 +1,13 @@
+import { of } from 'rxjs';
 import { Injectable } from '@angular/core';
 import { Actions, createEffect, ofType } from '@ngrx/effects';
-import { of } from 'rxjs';
-import { catchError, map, mergeMap, tap } from 'rxjs/operators';
-import * as RoomAPIActions from './api.actions';
-import * as RoomUIActions from './ui.actions';
 import { DocumentChangeAction } from '@angular/fire/firestore';
-import { Room } from './../../models';
-import { RoomService } from './../../rooms-location.service';
+import { catchError, map, mergeMap, tap } from 'rxjs/operators';
+import * as RoomUIActions from './ui.actions';
+import * as RoomAPIActions from './api.actions';
+
+import { Room } from '~features/rooms-location/models';
+import { RoomService } from '~features/rooms-location/rooms-location.service';
 
 export interface FirebaseResponse {
   key: string;

@@ -1,23 +1,34 @@
-<div class="buttons">
-  <button
-    mat-raised-button
-    (click)="loadAllRequested.emit()"
-    style="margin-right:10px;"
-  >
-    Load All Rooms</button
-  >
-  <button mat-raised-button (click)="loadCategoryRequested.emit('floor-7')"
-  style="margin-right:10px;">
-    Load Rooms 7th
-  </button>
-  <button mat-raised-button (click)="loadCategoryRequested.emit('floor-10')">
-    Load Rooms 10th
-  </button>
-</div>
+<mat-card>
+        <div  class="content"
+              fxLayout="row"
+              fxLayoutAlign="left center"
+              fxLayoutGap="1vh"
+              fxLayout.xs="column"
+              fxLayoutAlign.xs="left space-between"
+              fxLayoutGap.xs="1vh" >
+            <div class="sec1" fxFlex.xs="55">
+                <button mat-raised-button color="warn" (click)="loadAllRequested.emit()"
+                >
+                Load All Rooms
+                </button>
+            </div>
+            <div class="sec2" fxFlex.xs="55">
+                <button mat-raised-button color="accent" (click)="loadCategoryRequested.emit('floor-7')"
+                >
+                Load Rooms 7th
+                </button>
+            </div>
+            <div class="sec3" fxFlex.xs="55">
+                <button mat-raised-button color="primary" (click)="loadCategoryRequested.emit('floor-10')">
+                    Load Rooms 10th
+                </button>
+            </div>
+        </div>
+</mat-card>
 <div *ngIf="loading">
   <mat-progress-bar mode="indeterminate"></mat-progress-bar>
 </div>
-<div *ngIf="!loading">
+<div *ngIf="!loading" style="margin-top: 1vh;">
   <div class="rooms-list" *ngIf="rooms">
     <app-room-card-item
       *ngFor="let room of rooms"

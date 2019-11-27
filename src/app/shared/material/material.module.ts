@@ -19,7 +19,8 @@ import {
   MatTableModule,
   MatPaginatorModule,
   MatCardModule,
-  MatProgressBarModule
+  MatProgressBarModule,
+  MatSidenav
 } from '@angular/material';
 
 const modules = [
@@ -43,6 +44,8 @@ const modules = [
   MatCardModule,
   MatProgressBarModule
 ];
+
+export { MatSidenav };
 
 @NgModule({
   imports: [CommonModule, ...modules],

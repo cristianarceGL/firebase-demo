@@ -1,8 +1,7 @@
-import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { map } from 'rxjs/operators';
-import { Room, RoomResult } from './models';
-import { AngularFireDatabase, AngularFirestore } from '../core/firebase.module';
+import { Injectable } from '@angular/core';
+
+import { AngularFirestore } from '~features/core/firebase.module';
 
 @Injectable({
   providedIn: 'root'

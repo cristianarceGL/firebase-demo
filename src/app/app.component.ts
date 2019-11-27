@@ -1,7 +1,8 @@
-import { Component, OnInit, ViewChild, HostListener } from '@angular/core';
 import { Store } from '@ngrx/store';
-import { RoomUIActions, selectAppComponentViewModel } from './../app/features/rooms-location/state/room';
-import { MatSidenav } from '@angular/material';
+import { Component, OnInit, ViewChild, HostListener } from '@angular/core';
+
+import { MatSidenav } from '~shared/material';
+import { RoomUIActions, selectAppComponentViewModel } from '~app/features/rooms-location/state/room';
 
 @Component({
   selector: 'app-root',
@@ -21,7 +22,7 @@ export class AppComponent implements OnInit {
       this.sidenav.fixedTopGap = 75;
       this.opened = false;
     } else {
-      this.sidenav.fixedTopGap = 75;
+        this.sidenav.fixedTopGap = 75;
     }
   }
 
@@ -36,8 +37,8 @@ export class AppComponent implements OnInit {
   @HostListener('window:resize', ['$event'])
   public onResize(event) {
     if (event.target.innerWidth < 768) {
-      this.sidenav.fixedTopGap = 75;
-      this.opened = false;
+       this.sidenav.fixedTopGap = 75;
+         this.opened = false;
     } else {
       this.sidenav.fixedTopGap = 75;
     }

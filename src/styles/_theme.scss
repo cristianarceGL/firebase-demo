@@ -1,0 +1,7 @@
+@import '~@angular/material/theming';
+@import 'vendors/material/material';
+
+@include mat-core();
+
+// // Design System Primary color scheme
+@include angular-material-theme($primary-theme);

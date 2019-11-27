@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { RoomCardListComponent } from './room-card-list.component';
-import { MaterialModule } from './../../../shared/material';
+import { SharedModule } from '~shared/shared.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { RoomCardItemModule } from '../room-card-item/room-card-item.module';
+import { RoomCardListComponent } from './room-card-list.component';
+import { RoomCardItemModule } from '~features/rooms-location/room-card-item/room-card-item.module';
 
 
 @NgModule({
@@ -12,7 +12,7 @@ import { RoomCardItemModule } from '../room-card-item/room-card-item.module';
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
-    MaterialModule,
+    SharedModule,
     RoomCardItemModule,
   ],
   declarations: [RoomCardListComponent],

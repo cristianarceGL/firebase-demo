@@ -1,0 +1,110 @@
+// ===============================
+// Support Palette Color Definition
+// ===============================
+// define a real custom palette (using http://mcg.mbitson.com)
+$epd-light-palette-primary: (
+  50 : #e1f3fc,
+  100 : #b3e1f7,
+  200 : #81cdf2,
+  300 : #4eb9ed,
+  400 : #28aae9,
+  500 : #029be5,
+  600 : #0293e2,
+  700 : #0189de,
+  800 : #017fda,
+  900 : #016dd3,
+  A100 : #fbfdff,
+  A200 : #c8e1ff,
+  A400 : #95c5ff,
+  A700 : #7bb8ff,
+  contrast: (
+      50 : #000000,
+      100 : #000000,
+      200 : #000000,
+      300 : #000000,
+      400 : #000000,
+      500 : #ffffff,
+      600 : #ffffff,
+      700 : #ffffff,
+      800 : #ffffff,
+      900 : #ffffff,
+      A100 : #000000,
+      A200 : #000000,
+      A400 : #000000,
+      A700 : #000000,
+  )
+);
+
+$epd-light-palette-accent: (
+  50 : #fff9e6,
+  100 : #ffefbf,
+  200 : #ffe595,
+  300 : #ffdb6b,
+  400 : #ffd34b,
+  500 : #ffcb2b,
+  600 : #ffc626,
+  700 : #ffbe20,
+  800 : #ffb81a,
+  900 : #ffac10,
+  A100 : #ffffff,
+  A200 : #fffcf8,
+  A400 : #ffe9c5,
+  A700 : #ffdfac,
+  contrast: (
+      50 : #000000,
+      100 : #000000,
+      200 : #000000,
+      300 : #000000,
+      400 : #000000,
+      500 : #000000,
+      600 : #000000,
+      700 : #000000,
+      800 : #000000,
+      900 : #000000,
+      A100 : #000000,
+      A200 : #000000,
+      A400 : #000000,
+      A700 : #000000,
+  )
+);
+
+$epd-light-palette-warn: (
+  50 : #fef0e2,
+  100 : #fcdab6,
+  200 : #fbc186,
+  300 : #f9a855,
+  400 : #f79530,
+  500 : #f6820c,
+  600 : #f57a0a,
+  700 : #f36f08,
+  800 : #f26506,
+  900 : #ef5203,
+  A100 : #ffffff,
+  A200 : #ffebe3,
+  A400 : #ffc6b0,
+  A700 : #ffb496,
+  contrast: (
+      50 : #000000,
+      100 : #000000,
+      200 : #000000,
+      300 : #000000,
+      400 : #000000,
+      500 : #000000,
+      600 : #000000,
+      700 : #000000,
+      800 : #000000,
+      900 : #ffffff,
+      A100 : #000000,
+      A200 : #000000,
+      A400 : #000000,
+      A700 : #000000,
+  )
+);
+
+// Design System Light color scheme
+$palette-primary: mat-palette($epd-light-palette-primary, 900);
+$palette-accent: mat-palette($epd-light-palette-accent, 900);
+$palette-warn: mat-palette($epd-light-palette-warn, 900);
+
+$primary-theme: mat-light-theme($palette-primary, $palette-accent, $palette-warn);
+

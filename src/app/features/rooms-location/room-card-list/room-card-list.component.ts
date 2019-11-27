@@ -1,5 +1,6 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { Room } from '../models';
+
+import { Room } from '~features/rooms-location/models';
 
 @Component({
   selector: 'app-room-card-list',

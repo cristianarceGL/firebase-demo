@@ -1,9 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
-import { MaterialModule } from './../shared/material/material.module';
+import { MaterialModule } from '~shared/material/material.module';
 
-const toExport = [CommonModule, MaterialModule];
+const toExport = [CommonModule, MaterialModule, FlexLayoutModule];
 
 @NgModule({
   imports: [...toExport],

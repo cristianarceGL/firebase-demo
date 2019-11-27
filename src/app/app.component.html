@@ -1,3 +1,4 @@
+<div class="alternate-theme">
 <!-- Toolbar -->
 <mat-toolbar class="flexSpaceBetween" color="primary" >
   <span>Firebase Demo</span>
@@ -19,7 +20,6 @@
       </a>
     </mat-nav-list>
   </mat-sidenav>
-
   <!-- Main content -->
   <mat-sidenav-content style="overflow-x: hidden; padding: 0 2vw;">
     <!-- Applying the mat-tyography class adds styles for native elements. -->
@@ -28,7 +28,7 @@
       <mat-divider></mat-divider>
     </section>
     <!-- Angular material cards -->
-    <div class="productCards">
+    <div>
         <app-room-card-list
         *ngIf="appComponentViewModel$ | async as vm"
         [rooms]="vm.rooms"
@@ -40,3 +40,4 @@
     </div>
   </mat-sidenav-content>
 </mat-sidenav-container>
+</div>
